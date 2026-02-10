@@ -1,0 +1,58 @@
+{
+  "Pb": {
+    "name": "Lead",
+    "key": "Pb",
+    "z_eff": 82.0,
+    "density_g_cm3": 11.35,
+    "mu_coeff": 15.0,
+    "mu_exponent": 1.3,
+    "photoelectric_scale": 1.25,
+    "compton_scale": 0.9,
+    "pair_scale": 1.35
+  },
+  "Al": {
+    "name": "Aluminum",
+    "key": "Al",
+    "z_eff": 13.0,
+    "density_g_cm3": 2.7,
+    "mu_coeff": 0.8,
+    "mu_exponent": 1.2,
+    "photoelectric_scale": 0.95,
+    "compton_scale": 1.05,
+    "pair_scale": 0.9
+  },
+  "H2O": {
+    "name": "Water",
+    "key": "H2O",
+    "z_eff": 7.4,
+    "density_g_cm3": 1.0,
+    "mu_coeff": 0.15,
+    "mu_exponent": 1.1,
+    "photoelectric_scale": 1.0,
+    "compton_scale": 1.1,
+    "pair_scale": 0.85
+  },
+  "Air": {
+    "name": "Air",
+    "key": "Air",
+    "z_eff": 7.2,
+    "density_g_cm3": 0.001225,
+    "mu_coeff": 0.0002,
+    "mu_exponent": 1.1,
+    "photoelectric_scale": 0.8,
+    "compton_scale": 1.15,
+    "pair_scale": 0.8
+  },
+  "Tissue": {
+    "name": "Tissue",
+    "key": "Tissue",
+    "z_eff": 7.4,
+    "density_g_cm3": 1.04,
+    "mu_coeff": 0.16,
+    "mu_exponent": 1.1,
+    "photoelectric_scale": 1.0,
+    "compton_scale": 1.12,
+    "pair_scale": 0.9
+  }
+}
+

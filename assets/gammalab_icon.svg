@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="GammaLab icon">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00ff66" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#00cc55" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" fill="#050807"/>
+  <circle cx="128" cy="128" r="110" fill="none" stroke="url(#g)" stroke-width="12"/>
+  <path d="M154 52c-36 0-64 28-64 64v104h30V116c0-19 15-34 34-34h18V52h-18z" fill="url(#g)"/>
+</svg>
