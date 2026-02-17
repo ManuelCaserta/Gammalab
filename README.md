@@ -1,75 +1,75 @@
 # GammaLab
 
-A didactic simulator of gamma-ray attenuation and interaction mechanisms (photoelectric, Compton, pair production).
+Simulatore didattico di attenuazione dei raggi gamma e dei meccanismi di interazione (effetto fotoelettrico, Compton, produzione di coppie).
 
-## Setup
+## Installazione
 
-1. **Install Python 3.11+** (if not already installed)
+1. **Installa Python 3.11 o superiore** (se non è già installato).
 
-2. **Create a virtual environment** (recommended):
+2. **Crea un ambiente virtuale** (consigliato):
    ```bash
    python -m venv venv
    ```
 
-3. **Activate the virtual environment**:
-   - On Windows:
+3. **Attiva l’ambiente virtuale**:
+   - Su Windows:
      ```bash
      venv\Scripts\activate
      ```
-   - On macOS/Linux:
+   - Su macOS/Linux:
      ```bash
      source venv/bin/activate
      ```
 
-4. **Install dependencies**:
+4. **Installa le dipendenze**:
    ```bash
    pip install -r requirements.txt
    ```
 
-## Running the App
+## Avvio dell’app
 
-Launch the Streamlit app:
+Per avviare l’applicazione Streamlit:
 ```bash
 streamlit run app.py
 ```
 
-The app will open in your default web browser at `http://localhost:8501`.
+L’app si aprirà nel browser predefinito all’indirizzo `http://localhost:8501`.
 
-## Run Tests
+## Eseguire i test
 
 ```bash
 pytest tests -v
 ```
 
-Some test modules skip automatically if optional plotting/report dependencies are unavailable.
+Alcuni test vengono saltati automaticamente se le dipendenze opzionali (grafici/report) non sono disponibili.
 
 ## Tutorial
 
-See `TUTORIAL.md` for a classroom-oriented walkthrough.
+Consulta `TUTORIAL.md` per una guida passo-passo pensata per l’uso in aula.
 
-## Project Structure
+## Struttura del progetto
 
 ```
 GammaLab/
-├── app.py                 # Streamlit entrypoint
-├── requirements.txt       # Python dependencies
-├── README.md              # This file
-├── TUTORIAL.md            # Step-by-step user guide
-├── gammalab/             # Main package
+├── app.py                 # Punto di ingresso Streamlit
+├── requirements.txt       # Dipendenze Python
+├── README.md              # Questo file
+├── TUTORIAL.md            # Guida utente passo-passo
+├── assets/                # Icone (es. SVG)
+├── gammalab/              # Pacchetto principale
 │   ├── __init__.py
-│   ├── materials.json     # Material configuration
-│   ├── models.py          # Physics/math functions
-│   ├── sim.py             # Monte Carlo simulation
-│   ├── ui.py              # UI helper/plot functions
-│   └── export.py          # PNG/PDF export helpers
-└── tests/                # Unit tests
+│   ├── materials.json     # Configurazione materiali
+│   ├── models.py          # Funzioni fisica/matematica
+│   ├── sim.py             # Simulazione Monte Carlo
+│   ├── ui.py              # Grafici e helper interfaccia
+│   └── export.py          # Esportazione PNG/PDF
+└── tests/                 # Test unitari
     ├── test_models.py
     ├── test_sim.py
     ├── test_ui.py
     └── test_export.py
 ```
 
-## Development
+## Sviluppo
 
-This is a school project designed to be beginner-readable while maintaining clean code structure. The physics logic will be implemented in subsequent development phases.
-
+Progetto didattico pensato per essere leggibile anche da chi è alle prime armi, mantenendo una struttura di codice ordinata. La logica fisica può essere estesa nelle fasi successive di sviluppo.
